@@ -84,7 +84,22 @@ const backBtn = document.querySelector('#back');
 const progressContainer = document.querySelector('#progress');
 
 let scoreE = 0;
+let scoreI = 0;
+let scoreS = 0;
+let scoreN = 0;
+let scoreT = 0;
+let scoreF = 0;
+let scoreJ = 0;
+let scoreP = 0;
 let questionIndex = 0;
+let resultE = 'E';
+let resultI = 'I';
+let resultS = 'S';
+let resultN = 'N';
+let resultT = 'T';
+let resultF = 'F';
+let resultJ = 'J';
+let resultP = 'P';
 let result = '';
 
 let ESFP = 'ESFP';
