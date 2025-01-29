@@ -355,5 +355,9 @@ span.answer-description::after{
     button{
         border-radius: 25px;
     }
+
+    img{
+        scale: 0.5;
+    }
 }
 
