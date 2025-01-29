@@ -177,7 +177,7 @@ function checkAnswer(){
     if (userAnswer === questions[questionIndex]['correct']){
         score++;
     } else {
-        console.log("Даша ептвою дивизю, подумай");
+        alert("Даша ептвою дивизию, подумай");
         submitBtn.blur();
         return;
     };
