@@ -244,6 +244,7 @@ label{
 span.answer-description{
     align-self: center;
     justify-self: center;
+    border-radius: 25px;
 }
 
 /* label:first-child{
@@ -268,6 +269,7 @@ span.answer-description{
     align-items: center;
     position: relative;
     width: 35vw;
+    border-radius: 25px;
 }
 
 span.answer-description::before{
