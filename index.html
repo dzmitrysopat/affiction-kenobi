@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mbti</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body class="body_hide">
+    <header>
+        <a href="./index.html">Тест на Скуфиню!</a>
+    </header>
+    <main>
+        <section class="first-screen element-animation">
+            <p id="description">
+                С днем рождения, нимфа! <br> Фотки моей жопы нет, поэтому держи картинку и воображай. <br> Хочешь подарок?! Ответь на вопросы!
+            </p>
+            <div>
+                <img src="./img/3d-flame-naked-man-standing-in-front-of-window-at-night.png" alt="">
+                <a href="#" onclick="startBtn()">Начать</a>
+            </div>
+        </section>
+
+        <article class="quiz hide element-animation" id="quiz">
+            <section class="progress">
+                <div id="test-body">
+                    <p class="number result">Номер вопроса ...</p>
+                </div>
+                <progress max="%max%" value="%step%" id="progress"></progress>
+            </section>
+            <section class="quiz-header" id="quiz-header">
+                <h2 class="question">Загружаем вопрос ...</h2>
+            </section>
+
+            <section class="quiz-list element-animation" id="list">
+                <div class="answer-item">
+                    <label>
+                        <input type="radio" class="answer" name="answer">
+                        <span>Ответ ...</span> 
+                    </label>
+                </div>
+                <div class="results element-animation">
+                    <div class="result-container">
+                        <h2 class="title">%title%</h2>
+                        <p class="result">%result%</p>
+                    </div>
+                    <h3 class="summary">%message%</h3>
+                </div>
+            </section>
+            <button id="submit" class="" >Далее</button>
+            <!-- <button id="back" class="hide" onclick="prevQuestion()">Назад</button> -->
+        </article>
+    </main>
+    <footer></footer>
+    <!-- <script src="./script.js"></script> -->
+</body>
+</html>

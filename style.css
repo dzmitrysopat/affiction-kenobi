@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: #383838;
+    padding: 0;
+    margin: 0;
+    /* outline: 2px solid lightgreen; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 100vw;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background: url('./img/wallhaven-z8dg9y.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.body_hide {
+	opacity: 0;
+	transition: 2s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+
+.element-animation {
+    opacity: 0;
+    transform: translateY(10%);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
+header{
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+header > a{
+    transition: all .3s;
+}
+
+header > a:hover{
+    color: #fff;
+}
+
+main{
+    /* font-size: 1.1rem; */
+    font-size: 22px;
+    flex: 1;
+    /* font-weight:bolder; */
+    text-align: justify;
+}
+
+.first-screen{
+    /* max-width: 1100px; */
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 100px;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+
+.first-screen > p{
+    max-width: 600px;
+    padding: 25px 50px;
+    background: rgba(255, 255, 255, 0.32);
+    border-radius: 0px;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    -webkit-box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+::selection{
+    background-color: #1474a1;
+    color: #fafafa;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+div > a,
+button{
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px 100px;
+    border-radius: 50px;
+    transition: all .4s; 
+    color: #383838;
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 2px solid #ffffff47;
+    box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2); 
+    width: 100%;
+}
+
+div > a:before,
+button:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    /* background: #1474a1; */
+    z-index: -1;
+    transition: .25s ease;
+    transform: translate(0, 0);
+}
+
+div > a:hover{
+    /* background-color: inherit; */
+    /* border: 2px solid #fafafa;
+    color: #fafafa;
+    scale: 1.01; */
+    transform: translate(4px, 4px);
+}
+
+button:hover{
+    /* scale: 1.02; */
+    transform: translate(4px, 4px);
+}
+
+.hide{
+    display: none !important;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    color: #fafafa;
+}
+
+.progress{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+progress{
+    width: 600px;
+    height: 15px;
+    border-radius: 0px;
+    justify-content: space-between;
+}
+
+progress::-webkit-progress-bar { 
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 0px;
+    /* border: 1px solid #1474a1; */
+} 
+progress::-webkit-progress-value {
+    background: #1474a1;
+    border-radius: 00px;
+}
+
+span,.title, .result,.question{
+    color: #383838;
+}
+
+.result{
+    font-weight: 700;
+}
+
+#quiz{
+    padding: 50px 50px;
+    /* border-radius: 0px; */
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.32);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    -webkit-box-shadow: 15px 15px 10px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 15px 15px 10px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 15px 15px 10px 0px rgba(34, 60, 80, 0.2);
+}
+
+.result-container{
+    align-items: center;
+}
+
+.results{
+    text-align: center;
+}
+
+h3.summary{
+    font-weight: 100;
+    max-width: 1400px;
+    padding: 25px 50px;
+    background: rgba(255, 255, 255, 0.32);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+}
+
+label{
+    padding: 10px;
+    transition: all .3s;
+    /* border-radius: 18px; */
+    display: flex;
+    cursor: pointer;
+    border-radius: 25px;
+} 
+
+span.answer-description{
+    align-self: center;
+    justify-self: center;
+}
+
+label:first-child{
+    margin-bottom: 15px;
+}
+
+label:hover{
+    background-color: #1474a16e;
+    border-radius: 25px;
+}
+
+[type="radio"]{
+    display: none;
+}
+
+[type="radio"]:checked + span.answer-description::after{
+    transform: scale(1);
+}
+
+span.answer-description{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    width: 35vw;
+}
+
+span.answer-description::before{
+    content: '';
+    flex: 0 0 25px;
+    height: 25px;
+    background-color: #ffffff1c;
+    border: 2px solid #1474a1;
+    opacity: 0.85;
+    border-radius: 50%;
+    margin-right: 10px;
+
+    align-self: flex-start;
+}
+
+span.answer-description::after{
+    transition: all ease-out 0.1s;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    content: url('./img/check-input.svg');
+    transform: scale(0);
+}
+
+@media screen and (max-width:900px){
+    main{
+        padding: 25px;
+        text-align: start;
+    }
+
+    main > section > div{
+        align-items: center;
+    }
+
+    h2.question{
+        font-size: 1.5rem;
+    }
+
+    span{
+        font-size: 1.2rem;
+    }
+
+    section > p,
+    .results{
+        text-align: justify;
+        background: inherit;
+    }
+
+    h3.summary{
+        font-size: 1.3rem;
+        background: none;
+        margin: 0;
+        padding: 15px !important;
+    }
+
+    body{
+        gap: 25px;
+        overflow-x: hidden;
+    }
+
+    .progress{
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90vw;
+    }
+
+    span.answer-description{
+        width: 70vw;
+    }
+
+    #quiz,
+    .results{
+        padding: 15px;
+    }
+
+    div > a{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #quiz,
+    button{
+        border-radius: 0px;
+    }
+}
+
