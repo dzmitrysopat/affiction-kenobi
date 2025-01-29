@@ -353,7 +353,7 @@ span.answer-description::after{
 @media screen and (max-width: 550px){
     #quiz,
     button{
-        border-radius: 0px;
+        border-radius: 25px;
     }
 }
 
