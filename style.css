@@ -359,5 +359,8 @@ span.answer-description::after{
         border-radius: 25px;
     }
 
+    .result{
+        text-align: center;
+    }
 }
 
