@@ -337,7 +337,7 @@ span.answer-description::after{
     .progress{
         justify-content: center;
         flex-wrap: wrap;
-        width: 90vw;
+        width: 80vw;
     }
 
     span.answer-description{
