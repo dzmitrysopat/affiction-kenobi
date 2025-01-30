@@ -33,7 +33,7 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(68,115,227,1) 0%,
 }
 
 img{
-    width: 80vw;
+    width: 30vw;
 }
 
 .body_hide {
@@ -90,7 +90,7 @@ main{
 }
 
 
-.first-screen > p{
+.first-screen > div > p{
     color: #fafafa;
     max-width: 600px;
     padding: 25px 50px;
@@ -131,7 +131,7 @@ button{
     -webkit-backdrop-filter: blur(7px);
     border: 2px solid #ffffff47;
     box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2); 
-    width: 100%;
+    width: inherit;
 }
 
 div > a:before,
@@ -361,6 +361,10 @@ span.answer-description::after{
 
     .result{
         text-align: center;
+    }
+
+    img{
+        width: 80vw;
     }
 }
 
