@@ -226,7 +226,7 @@ span,.title, .result,.question{
 
 h3.summary{
     font-weight: 100;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     padding: 25px 50px;
     background: rgba(255, 255, 255, 0.32);
     /* border-radius: 16px; */
@@ -374,6 +374,11 @@ span.answer-description::after{
 
     div{
         gap: 20px;
+    }
+
+    h2.title{
+        text-align: center;
+        align-self: center;
     }
 }
 
