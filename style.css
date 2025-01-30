@@ -3,7 +3,7 @@
 *{
     font-family: "Poppins", sans-serif;
     text-decoration: none;
-    color: #383838;
+    color: #fff;
     padding: 0;
     margin: 0;
     /* outline: 2px solid lightgreen; */
@@ -23,11 +23,17 @@ body{
     flex: 1;
     margin: 0 auto;
     overflow-x: hidden;
-    background: url('./img/wallhaven-z8dg9y.png') no-repeat;
+    /* background: url('./img/wallhaven-z8dg9y.png') no-repeat; */
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(98,252,70,1) 100%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+img{
+    width: 80vw;
 }
 
 .body_hide {
@@ -57,6 +63,7 @@ header{
 }
 
 header > a{
+    color: #383838;
     transition: all .3s;
 }
 
@@ -75,8 +82,8 @@ main{
 .first-screen{
     /* max-width: 1100px; */
     display: flex;
-    flex-wrap: wrap-reverse;
-    gap: 100px;
+    flex-wrap: wrap;
+    gap: 50px;
     align-items: center;
     justify-self: center;
     justify-content: center;
@@ -84,6 +91,7 @@ main{
 
 
 .first-screen > p{
+    color: #fafafa;
     max-width: 600px;
     padding: 25px 50px;
     background: rgba(255, 255, 255, 0.32);
@@ -116,7 +124,7 @@ button{
     padding: 15px 100px;
     border-radius: 25px;
     transition: all .4s; 
-    color: #383838;
+    color: #fff;
     background: rgba(255, 255, 255, 0.28);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7px);
@@ -141,15 +149,10 @@ button:before{
 }
 
 div > a:hover{
-    /* background-color: inherit; */
-    /* border: 2px solid #fafafa;
-    color: #fafafa;
-    scale: 1.01; */
     transform: translate(4px, 4px);
 }
 
 button:hover{
-    /* scale: 1.02; */
     transform: translate(4px, 4px);
 }
 
@@ -190,7 +193,7 @@ progress::-webkit-progress-value {
 }
 
 span,.title, .result,.question{
-    color: #383838;
+    color: #fff;
 }
 
 .result{
