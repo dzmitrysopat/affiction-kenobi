@@ -157,6 +157,10 @@ div > a:hover{
     transform: translate(4px, 4px);
 }
 
+#ass > img{
+    margin-left: 20px;
+}
+
 button:hover{
     transform: translate(4px, 4px);
 }
