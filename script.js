@@ -2,6 +2,11 @@ setTimeout(function(){
 	document.body.classList.add('body_visible');
 }, 0);
 
+function AssBtn(){
+    document.getElementById("witcher").classList.add("hide");
+    document.getElementById("ass").classList.remove("hide");
+}
+
 function onEntry(entry) {
 	entry.forEach(change => {
 	  if (change.isIntersecting) {
@@ -17,8 +22,7 @@ function onEntry(entry) {
   }
 
 function startBtn(){
-    document.getElementById("description").classList.add("hide");
-    document.querySelector("img").classList.add("hide");
+    document.getElementById("ass").classList.add("hide");
     document.querySelector("main div a").classList.add("hide");
     document.getElementById("quiz").classList.remove("hide");
 }

@@ -55,6 +55,10 @@ img{
     transform: translateY(0%);
 }
 
+.hidden{
+    display: none !important;
+}
+
 header{
     margin: 0 auto;
     padding: 20px 0;
